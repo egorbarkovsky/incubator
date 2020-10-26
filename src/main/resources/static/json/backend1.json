@@ -1,0 +1,35 @@
+{
+  "direction" : "backend",
+  "number" : 1,
+  "teamLead" : {
+    "name" : "Егор",
+    "surname" : "Барковский",
+    "avatar" : ""
+  },
+  "members" : [
+    {
+      "name" : "Егор",
+      "surname" : "Барковский",
+      "avatar" : "",
+      "rate" : 1
+    },
+    {
+      "name" : "Егор",
+      "surname" : "Барковский",
+      "avatar" : "",
+      "rate" : 1
+    },
+    {
+      "name" : "Егор",
+      "surname" : "Барковский",
+      "avatar" : "",
+      "rate" : 1
+    },
+    {
+      "name" : "Егор",
+      "surname" : "Барковский",
+      "avatar" : "",
+      "rate" : 1
+    }
+  ]
+}

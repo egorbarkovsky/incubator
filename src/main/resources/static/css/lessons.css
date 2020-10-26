@@ -1,0 +1,353 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-os-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Rubik;
+    padding: 0;
+    margin: 0;
+    background-color: #FCFCFC;
+    background-image: linear-gradient(#FCFCFC, #FBFBFB);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+button:focus{
+    outline: none !important;
+}
+
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.group-navbar,
+.timetable-navbar,
+.course-materials-navbar {
+    min-width: 95px;
+    height: 100%;
+    display: flex;
+    position: fixed;
+}
+
+.group-navbar {
+    background-color: #192129;
+}
+
+.timetable-navbar {
+    background-color: #27181C;
+}
+
+.course-materials-navbar {
+    background-color: #1C1823;
+}
+
+.navbar-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.navbar-icon-section {
+    margin: 27px auto;
+}
+
+.group-content,
+.timetable-content,
+.course-materials-content {
+    width: 100%;
+    height: 100%;
+}
+
+.group-content {
+    background-color: #4885ED;
+}
+
+.timetable-content {
+    background-color: #D83A64;
+}
+
+.course-materials-content {
+    background-color: #6069B0;
+}
+
+.group-profile,
+.timetable-profile,
+.course-materials-profile {
+    min-width: 325px;
+    height: 100%;
+}
+
+.group-profile {
+    background-color: #192129;
+}
+
+.timetable-profile {
+    background-color: #27181C;
+}
+
+.course-materials-profile {
+    background-color: #1C1823;
+}
+
+.content-wrapper {
+    margin-left: 175px;
+    margin-top: 25px;
+}
+
+.title h1{
+    font-family: Rubik;
+    font-size: 64px;
+    color: white;
+    font-weight: 700;
+}
+
+.content-lead-info {
+    margin-top: 35px;
+    display: flex;
+}
+
+.person-card {
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #192129;
+    min-height: 325px;
+    min-width: 205px;
+}
+
+.person-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.person-card-item {
+    margin: 10px auto;
+}
+
+.avatar {
+    background-color: #4885ED;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+}
+
+.group-statistics {
+    margin-left: 90px;
+}
+
+.group-statistics-item {
+    margin-bottom: 25px;
+}
+
+.content-group-members {
+    display: flex;
+    margin-top: 25px;
+}
+
+.member {
+    margin-right: 25px;
+}
+
+.profile {
+    display: flex;
+}
+
+.personal-card-wrapper {
+    flex-direction: column;
+    margin: 30px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.personal-avatar {
+    background-color: #4885ED;
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+}
+
+.personal-login {
+    margin-top: 16px;
+}
+.personal-name {
+    margin-top: 46px;
+}
+
+.personal-direction {
+    margin-top: 10px;
+}
+
+.edit-profile {
+    margin-top: 20px;
+    width: 240px;
+    height: 55px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #4885ED;
+    font-family: Rubik;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.personal-time-label {
+    margin-top: 50px;
+}
+
+.personal-time-countdown {
+    margin-top: 10px;
+}
+
+
+.to-homework {
+    margin-top: 20px;
+    width: 240px;
+    height: 55px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #CE3E85;
+    font-family: Rubik;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.calendar-wrapper {
+    display: flex;
+}
+.day {
+    text-align: center;
+    display: grid;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 125px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.theme-button {
+    height: 35px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color: #4885ED;
+    font-family: Rubik;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 15px;
+}
+
+.day-name {
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 125px;
+    font-family: Rubik;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.material-title {
+    padding: 15px 15px;
+    text-align: left;
+    font-family: Rubik;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 90%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #1C1823;
+}
+
+.material-content-item {
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 10px;
+    display: flex;
+    width: 90%;
+    background-color: white;
+    border-bottom-color: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    align-items: center;
+}
+
+.material-content-item h1 {
+    font-family: Rubik;
+    font-size: 24px;
+    color: black;
+    position: fixed;
+}
+
+.material-content-item button {
+    background-color: #4885ED;
+    border-radius: 10px;
+    border-color: transparent;
+    height: 50px;
+    font-family: Rubik;
+    font-size: 18px;
+    color: white;
+    padding: 10px 15px;
+    font-weight: 700;
+    margin: 0px 5px;
+    min-width: 75px;
+}
+
+.material-content-item-buttons {
+    margin-left: auto;
+}
+
+.regular-text {
+    font-family: Rubik;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-family: Rubik;
+    font-size: 28px;
+    color: white;
+    font-weight: 700;
+}
+
+.regular-text-blacked {
+    font-family: Rubik;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+}
+
+.subtitle-blacked {
+    font-family: Rubik;
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+}
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <!-- META DATA -->
+    <title>Войти</title>
+    <meta name="description" content="Codelearn is a multi-purpose resume style landing page template by Codefest&trade;. Purchase now.">
+    <meta name="keywords" content="Codelearn,Codefest">
+    <meta name="author" content="Codefest">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">	
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" type="text/css" href="../css/util.css" />
+
+    <!-- SCRIPTS -->
+    <style type="text/css">
+        * { margin: 0; padding: 0; }
+        p { padding: 10px; }
+        #left { 
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+            bottom : 0;
+            width: 50%; 
+            height: 100%;
+            overflow: hidden;
+            background-color: black;
+        }
+        #right { 
+            position: absolute; 
+            right: 0; 
+            top: 0; 
+            bottom:0;
+            width: 50%; 
+            height: 100%;
+            overflow: hidden;
+            background-color: white;
+        } 
+    </style>
+</head>
+    <body>
+        <div id="left">
+            <div class="header" style="display: block; padding: 80px 0 0 0;">
+                <div style="margin: 0 auto; text-align: center;">
+                    <h1 style="color: white; font-family: Montserrat; font-size: 72px; font-weight: 700;">:incubator</h1>
+                </div>                    
+                <div style="margin: 0 auto; text-align: center; align-items:center;">
+                      <h3 style="color: white; font-family: Montserrat; font-size: 24px; font-weight: 700; max-width: 460px; margin: 0 auto;">бейбиситим юных разработчиков до победного конца</h3>
+                </div>
+                <div class="image-logo" style="display: flex;">
+                    <img src="/images/sapiens.svg" style="margin: 0 auto; margin-top: -30px; width: 100%;">
+                </div>
+            </div>
+        </div>
+    
+        <div id="right">
+            <div class="header" style="display: block; padding: 80px 0 100px 0; background-color: white;">
+                <div style="display: block; margin: 0 auto; text-align: center;">
+                    <h1 style="color: black; font-family: Montserrat; font-size: 72px; font-weight: 700;">get in touch</h1>
+                </div>                    
+                <div style="display: block; margin: 0 auto; text-align: center; align-items:center;">
+                      <h3 style="color: gray; font-family: Montserrat; font-size: 24px; font-weight: 700; max-width: 460px; margin: 0 auto;">процесс регистрации на данный момент недоступен</h3>
+                </div>
+                <div class="limiter">
+                    <div class="container-login100">
+                        <div class="wrap-login100 m-t-1 p-l-45 p-r-45 p-t-65">
+                            <form action="/sign-in" method="post" class="login100-form validate-form">
+
+                                <div class="wrap-input100 validate-input m-t-23" data-validate = "Username is required">
+                                    <span class="label-input100">Имя пользователя</span>
+                                    <input class="input100" type="text" id="username" name="username" placeholder="Введи логин">
+                                    <span class="focus-input100" data-symbol="&#xf206;"></span>
+                                </div>
+            
+                                <div class="wrap-input100 validate-input" data-validate="Password is required">
+                                    <span class="label-input100">Пароль</span>
+                                    <input class="input100" type="password" id="password" name="password" placeholder="Введи пароль">
+                                    <span class="focus-input100" data-symbol="&#xf190;"></span>
+                                </div>
+                                
+                                <div class="container-login100-form-btn p-t-31">
+                                    <div class="wrap-login100-form-btn">
+                                        <div class="login100-form-bgbtn"></div>
+                                        <button type="submit" class="login100-form-btn">
+                                            Войти
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

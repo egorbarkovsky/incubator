@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <!-- META DATA -->
+    <title>Группа</title>
+    <meta name="description" content="Codelearn is a multi-purpose resume style landing page template by Codefest&trade;. Purchase now.">
+    <meta name="keywords" content="Codelearn,Codefest">
+    <meta name="author" content="Codefest">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="css/lessons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="main-wrapper">
+            <nav class="group-navbar" >
+                <div class="navbar-icon-wrapper">
+                    <div class="navbar-icon-section">
+                        <a href="/group">
+                            <img src="images/group.svg">
+                        </a>
+                    </div>
+                    <div class="navbar-icon-section">
+                        <a href="/timetable">
+                            <img src="images/calendar.svg">
+                        </a>
+                    </div>
+                    <div class="navbar-icon-section">
+                        <a href="/materials">
+                            <img src="images/video.svg">
+                        </a>
+                    </div>
+                </div>
+               
+            </nav>
+            <div class="group-content">
+                <div class="content-wrapper">
+                    <div class="title">
+                        <h1>Backend #1</h1>
+                    </div>
+
+                    <div class="content-lead-info">
+                        <div class="person-card">
+                            <div class="person-card-wrapper">
+                                <h1 class="person-card-item regular-text">Teamlead</h1>
+                                <div class="person-card-item avatar"></div>
+                                <h1 class="person-card-item regular-text">Егор Барковский</h1>
+                            </div>
+                        </div>
+
+                        <div class="group-statistics">
+                            <div class="group-statistics-wrapper">
+                                <h1 class="group-statistics-item subtitle">Пройдено тем: 0/10</h1>
+                                <h1 class="group-statistics-item subtitle">Общий рейтинг группы: 1000</h1>
+                                <h1 class="group-statistics-item subtitle">Следующий зачет: 08.10</h1>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="content-group-members">
+                        <div class="person-card member">
+                            <div class="person-card-wrapper">
+                                <h1 class="person-card-item regular-text">Basic</h1>
+                                <div class="person-card-item avatar"></div>
+                                <h1 class="person-card-item regular-text">Егор Барковский</h1>
+                                <h1 class="person-card-item regular-text">Рейтинг: 100</h1>
+                            </div>
+                        </div>
+                        <div class="person-card member">
+                            <div class="person-card-wrapper">
+                                <h1 class="person-card-item regular-text">Basic</h1>
+                                <div class="person-card-item avatar"></div>
+                                <h1 class="person-card-item regular-text">Егор Барковский</h1>
+                                <h1 class="person-card-item regular-text">Рейтинг: 100</h1>
+                            </div>
+                        </div>
+                        <div class="person-card member">
+                            <div class="person-card-wrapper">
+                                <h1 class="person-card-item regular-text">Basic</h1>
+                                <div class="person-card-item avatar"></div>
+                                <h1 class="person-card-item regular-text">Егор Барковский</h1>
+                                <h1 class="person-card-item regular-text">Рейтинг: 100</h1>
+                            </div>
+                        </div>
+                        <div class="person-card member">
+                            <div class="person-card-wrapper">
+                                <h1 class="person-card-item regular-text">Basic</h1>
+                                <div class="person-card-item avatar"></div>
+                                <h1 class="person-card-item regular-text">Егор Барковский</h1>
+                                <h1 class="person-card-item regular-text">Рейтинг: 100</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group-profile">
+                <div class="personal-card-wrapper">
+                    <div class="personal-avatar"></div>
+                    <h1 class="personal-login subtitle" th:inline="text">[[${#httpServletRequest.remoteUser}]]</h1>
+                    <h1 class="personal-name subtitle" th:text="${firstName} + ' ' +${lastName}"></h1>
+                    <h1 class="personal-login subtitle" th:text="${direction}"></h1>
+                    <button class="edit-profile">Редактировать</button>
+                    <h1 class="personal-time-label subtitle">Занятия через</h1>
+                    <div class="personal-time-countdown title">
+                        <h1>05:10</h1>
+                    </div>
+                    <button class="to-homework">Домашнее задание</button>
+                </div>
+            </div>
+        </div>
+       
+    </body>
+</html>
